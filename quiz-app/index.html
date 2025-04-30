@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1 class="quiz-title"><i class="fas fa-brain"></i> Quiz Test</h1>
+    <div class="quiz-box">
+      <h2 class="question" id="ques">Click The Start Button</h2>
+      <div class="options">
+        <button class="option" id="opt1" onclick="selectOption(this)"></button>
+        <button class="option" id="opt2" onclick="selectOption(this)"></button>
+        <button class="option" id="opt3" onclick="selectOption(this)"></button>
+      </div>
+      <div class="navigation">
+        <button class="nav-btn" id="btn" onclick="nextQuestion()" disabled>Start</button>
+        <p id="time">0 : 00</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
